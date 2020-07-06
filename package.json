@@ -1,0 +1,27 @@
+{
+  "name": "gh-box",
+  "version": "1.0.0",
+  "description": "🐱 Update a gist to contain your GitHub profile data",
+  "author": "Yogi <me@yogi.codes>",
+  "license": "MIT",
+  "scripts": {
+    "build": "ncc build index.js --out dist --minify"
+  },
+  "dependencies": {
+    "@octokit/rest": "18.0.0",
+    "axios": "^0.19.2",
+    "dotenv": "8.2.0",
+    "humanize-number": "0.0.2"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "0.22.3",
+    "husky": "4.2.5",
+    "prettier": "2.0.5",
+    "pretty-quick": "2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
