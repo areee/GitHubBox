@@ -17,4 +17,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
-          CONSIDER_PRIVATE: true
+          CONSIDER_PRIVATE: ${{ secrets.CONSIDER_PRIVATE }}
